@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Start Mission</title>
+</head>
+<body>
+    Last label data date is {{ last_label_date }}
+    <br/>
+    <!--input name="add_data" type="button" id="btn1" title="add a new line" value="Add Data" onclick="location.href='/add_data'"/-->
+    <a href="/add_data">Add Data</a>
+    <br/>
+    <hr/>
+    Last completed mission is <a href="/show_last_image">{{ last_mission }}</a>
+    <br/>
+    {{ status_message }}
+    {% if status_message != 'has no running mission' %}
+        <br/>
+        <a href="/stop_cur_mission">stop current mission</a>
+    {% endif %}
+    <br/>
+    <hr/>
+    <form action="/submit" method="get" name="form2">
+        <table>
+            <tr>
+                <td height="10px">Mission Date</td>
+                <td height="10px"><input type="date" name="date"></td>
+            </tr>
+        </table>
+        Trust Code 
+        <input type="text" name="trust_code">
+        <input type="submit" value="submit">
+        <br/>
+        Notice: Submitting a new task will stop the task that is already running!
+    </form>
+</body>
+</html>

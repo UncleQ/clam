@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Data</title>
+</head>
+<body>
+    <a href="/mission">Back</a>
+    <hr/>
+    <form action="/add_label_line" method="get" name="form">
+        <table>
+            <tr>
+                <td height="10px">Date</td>
+                <td height="10px"><input type="date" name="date"></td>
+            </tr>
+            <tr>
+                <td height="10px">Open</td>
+                <td height="10px"><input type="text" name="start" oninput="value=value.replace(/[^\-?\d.]/g,'')"></td>
+            </tr>
+            <tr>
+                <td height="10px">Close</td>
+                <td height="10px"><input type="text" name="end" oninput="value=value.replace(/[^\-?\d.]/g,'')"></td>
+            </tr>
+            <tr>
+                <td height="10px">High</td>
+                <td height="10px"><input type="text" name="high" oninput="value=value.replace(/[^\-?\d.]/g,'')"></td>
+            </tr>
+            <tr>
+                <td height="10px">Low</td>
+                <td height="10px"><input type="text" name="low" oninput="value=value.replace(/[^\-?\d.]/g,'')"></td>
+            </tr>
+            <tr>
+                <td height="10px">Volume</td>
+                <td height="10px"><input type="text" name="volume" oninput="value=value.replace(/[^\-?\d.]/g,'')"></td>
+            </tr>
+            <tr>
+                <td height="10px">Amount</td>
+                <td height="10px"><input type="text" name="amount" oninput="value=value.replace(/[^\-?\d.]/g,'')"></td>
+            </tr>
+        </table>
+        <hr/>
+        Trust Code 
+        <input type="text" name="trust_code">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

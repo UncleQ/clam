@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Start Mission</title>
+</head>
+<body>
+    {{ status_message }}
+    <br/>
+    <hr/>
+    <form action="/submit" method="get">
+        <table>
+            <tr>
+                <td>date</td>
+                <td><input type="date" name="date"></td>
+            </tr>
+            <tr>
+                <td>end</td>
+                <td><input type="text" name="end"></td>
+            </tr>
+            <tr>
+                <td>high</td>
+                <td><input type="text" name="high"></td>
+            </tr>
+            <tr>
+                <td>low</td>
+                <td><input type="text" name="low"></td>
+            </tr>
+            <tr>
+                <td>volume</td>
+                <td><input type="text" name="volume"></td>
+            </tr>
+            <tr>
+                <td>amount</td>
+                <td><input type="text" name="amount"></td>
+            </tr>
+        </table>
+        <hr/>
+        trust code 
+        <input type="text" name="trust_code">
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>

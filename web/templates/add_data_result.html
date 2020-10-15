@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Data Result</title>
+</head>
+<body>
+    <input type="button" name="back" onclick="javascript:history.back(-1);" value="Back">
+    <input type="button" name="home" onclick="javascript:history.back(-1);window.location.href = document.referrer;" value="Add One More">
+    <input type="button" name="home" onclick="javascript:window.location.href = '/mission'" value="Finish">
+    <br/>
+    <hr/>
+    {{ result_message }} 
+</body>
+</html>
